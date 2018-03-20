@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.ejercicio1.MainActivity">
+
+    <EditText
+        android:id="@+id/nombreeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombretextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/nombre_text1"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/nombretextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nombreeditText"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/nombreeditText"
+        android:layout_marginTop="73dp"
+        android:text="@string/nombre_text1" />
+
+    <TextView
+        android:id="@+id/apellidotextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nombreeditText"
+        android:layout_alignStart="@+id/nombreeditText"
+        android:layout_below="@+id/nombreeditText"
+        android:layout_marginTop="32dp"
+        android:text="@string/apellido_text1" />
+
+    <EditText
+        android:id="@+id/apellidoeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/apellidotextView"
+        android:layout_alignStart="@+id/apellidotextView"
+        android:layout_below="@+id/apellidotextView"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="@string/apellido_text1"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/apellidoeditText"
+        android:layout_alignStart="@+id/apellidoeditText"
+        android:layout_below="@+id/apellidoeditText"
+        android:layout_marginTop="22dp"
+        android:text="@string/casado" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="55dp"
+        android:text="@android:string/ok" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:text="Reset" />
+
+</RelativeLayout>
