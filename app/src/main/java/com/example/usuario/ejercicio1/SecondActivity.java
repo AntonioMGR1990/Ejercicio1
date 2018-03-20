@@ -15,14 +15,17 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
     private EditText direccion;
     private EditText cp;
+    private String nombresingleton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         Button btnEnviar =(Button)findViewById(R.id.btnEnviar);
         btnEnviar.setOnClickListener(this);
+        nombresingleton=PersonaSingleton.getInstance().getNombre();
         direccion = (EditText) findViewById(R.id.Direccion);
         cp = (EditText)findViewById(R.id.CodigoPostal);
+        Toast.makeText(this,nombresingleton,Toast.LENGTH_SHORT).show();
     }
 
     @Override

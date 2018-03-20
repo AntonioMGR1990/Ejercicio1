@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button3:
                 Toast.makeText(MainActivity.this,"ok",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this,SecondActivity.class);
-
+                PersonaSingleton.getInstance().setNombre(nombre.getText().toString());
                 startActivity(intent);
                 return;
             case R.id.reset:
